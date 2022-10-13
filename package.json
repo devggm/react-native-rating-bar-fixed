@@ -1,5 +1,5 @@
 {
-  "name": "@aashu-dubey/react-native-rating-bar",
+  "name": "@ggmdev/react-native-rating-bar",
   "version": "0.1.0",
   "description": "A React Native component for generating and displaying interactive Tap or Swipe enabled Ratings.",
   "main": "lib/commonjs/index",

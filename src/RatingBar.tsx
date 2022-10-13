@@ -331,9 +331,9 @@ const RatingBar: React.FC<RatingBarProps> = ({
       .onUpdate((e) => onGestureMove(e, index))
       .onEnd(onGestureEnd);
 
-    const singleTap = Gesture.Tap()
-      .maxDuration(250)
-      .onStart((e) => onRatingTap(e, index));
+    // const singleTap = Gesture.Tap()
+    //   .maxDuration(250)
+    //   .onStart((e) => onRatingTap(e, index));
 
     return (
       <View
@@ -347,7 +347,7 @@ const RatingBar: React.FC<RatingBarProps> = ({
         pointerEvents={ignoreGestures ? 'none' : 'auto'}
       >
         {/* Gesture element */}
-        <GestureDetector gesture={Gesture.Simultaneous(panGesture, singleTap)}>
+        <GestureDetector gesture={Gesture.Simultaneous(panGesture)}>
           <View
             style={[
               shouldGlow && innerShadow,
